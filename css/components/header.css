@@ -1,0 +1,57 @@
+.site-header {
+    background-color: #ffffff;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+     /* isso basicamente irá centralizar o elemento no meio da dela (como o site exemplo)*/
+     width: calc(100% - 40px);
+        /* isso irá fazer com que o header tenha uma largura de 100% da tela, menos 40px (20px de cada lado) para dar um espaço entre o header e as bordas da tela */
+    border-radius: 15px;
+    z-index: 999;
+    /* quando usa o position, recomenda-se usar o z-index, para "trazer" o elemento para frente no eixo z, que é o eixo de profundidade, com isso trazemos ele mais para frente e evita que outros elementos fiqueem por cima dele.*/
+    display: flex;
+    /* já garantindo que os elementos dentro do header sejam exibidos um ao lado do outro, que é o padrão do flex*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 28px;    
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-center ul {
+    display: flex; /* alinhar um ao lado do outro */
+    gap:2.5rem; /*epaçamento*/
+}
+
+.nav-center a,
+.nav-right a {
+    
+    font-size: 1.25rem;
+    color: #7c3aed;
+}
+
+.nav-center a:hover,
+.nav-right a:hover {
+    color: #7c3aed;
+
+}
+
+.nav-right ul {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+/*ESTILIZAÇÃO DOS ICON*/
+.nav-right img {
+    height: 20px;
+}
+
+/*ESTILIZAÇÃO DOS ICONS - AO PASSAR O MOUSE POR CIMA*/
+
+.nav-right img:hover {
+   opacity: 0.7;
+}
