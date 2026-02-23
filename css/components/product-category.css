@@ -1,0 +1,55 @@
+.categories-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap; /* caso a tela seja pequena, os cards se ajustam*/
+    justify-content: center;
+    gap: 30px; /* espaço entre os cards */
+}
+
+.category-card {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    border-radius: 15px;
+    overflow: hidden; /*ira cortar tudo que vaze pra fora do card*/
+}
+
+.overlay {
+    /*o filho tem que ser absoluto do pai, que é o .category-card 'relative'*/
+    position: absolute;
+    inset: 0; /*top: 0; left: 0; right: 0; bottom: 0; é um 'atalho' para essas propriedades*/
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 1; /*garante que a sobreposição fique acima da imagem de fundo*/
+    }
+
+.category-name {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /*junto com o left e top, centraliza o texto dentro do card, no caso os botão*/
+
+    z-index: 2;
+    text-align: center;
+}
+
+.casual {
+    background: url(../../images/products/casual.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.esportivo {
+    background: url(../../images/products/esportivo.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.moderno {
+    background: url(../../images/products/colorido.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.futurista {
+    background: url(../../images/products/futurista.jpg) no-repeat center;
+    background-size: cover;
+}
