@@ -1,11 +1,11 @@
 .site-header {
     background-color: #ffffff;
     position: fixed;
-    top: 20px;
+    top: 60px;
     left: 50%;
     transform: translate(-50%);
      /* isso basicamente irá centralizar o elemento no meio da dela (como o site exemplo)*/
-     width: calc(100% - 40px);
+     width: calc(100% - 210px);
         /* isso irá fazer com que o header tenha uma largura de 100% da tela, menos 40px (20px de cada lado) para dar um espaço entre o header e as bordas da tela */
     border-radius: 15px;
     z-index: 999;

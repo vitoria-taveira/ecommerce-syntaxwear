@@ -5,6 +5,7 @@
     
     /* para cobrir e se adequar ao container */
     background-size: cover;
+    border-radius: 20px;
 }
 
 .hero-overlay {
