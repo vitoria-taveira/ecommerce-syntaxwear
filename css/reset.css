@@ -50,7 +50,8 @@ a {
   text-decoration: none;
 }
 
-ul,li {
-  text-decoration: none;
+ol, ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
