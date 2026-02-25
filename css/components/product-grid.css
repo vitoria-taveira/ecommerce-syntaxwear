@@ -76,10 +76,16 @@
 }
 
 @media (max-width:768px) {
+    .category-card {
+        width: 100%;
+    }
+}
+
+@media (max-width:768px) {
     .grid-section {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(5, auto);
-        grid-template-areas: "highlight highligh"
+        grid-template-areas: "highlight highlight"
         "sneaker-white sneaker-white"
         "model sneaker-color"
         "model sneaker-gray"
@@ -89,7 +95,7 @@
     }
 
     .highlight {
-        min-height: 500px;
+        min-height:500px;
     }
 
     .model {
